@@ -1,0 +1,18 @@
+.footer{
+    background-color: rgba(0, 0, 0, 0.2);
+
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-blue);
+
+    & p{
+        margin: 0;
+    }
+}
+
+.link{
+    text-decoration: none;
+    color: var(--color-blue);
+    margin-left: 4px;
+}
