@@ -10,7 +10,7 @@ function NewVideo() {
                     <label htmlFor="title">Título</label>
                     <input type="text" name="title" id="title" placeholder="Título del video" />
                 </div>
-                <div className={styles.formGroup}>
+                <div className={styles.formGroupSelect}>
                     <label htmlFor="category">Categoria</label>
                     <select name="category" className={styles.select}>
                         <option value="" disabled selected>Seleccione una categoría</option>
@@ -28,7 +28,7 @@ function NewVideo() {
                     <label htmlFor="video">Video</label>
                     <input type="text" name="video" id="video" placeholder="URL del video" />
                 </div>
-                <div className={styles.formGroupFull}>
+                <div className={styles.formGroupDescription}>
                     <label htmlFor="description">Descripción</label>
                     <textarea name="description" id="description" placeholder="Descripción del video"></textarea>
                 </div>
