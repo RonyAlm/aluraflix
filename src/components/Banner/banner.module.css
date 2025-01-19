@@ -69,9 +69,13 @@
 }
 
 @media screen and (width < 600px) {
+    .banner{
+        height: max-content;
+    }
     .bannerContent {
         flex-direction: column-reverse;
-        padding: 1rem;
+        gap: 2rem;
+        height: max-content;
     }
 
     .bannerInfo {
