@@ -10,7 +10,7 @@ import { useGlobalContext } from "../../context/GlobalContext";
 function ModalEdit({ closeModal, updateVideo }) {
 
     const ref = useRef();
-    const { categories} = useDataVideos();
+    const { categories } = useDataVideos();
     const { selectedVideo, openModal } = useGlobalContext();
 
 
@@ -19,12 +19,6 @@ function ModalEdit({ closeModal, updateVideo }) {
     const [urlImage, setImage] = useState(selectedVideo.urlImage);
     const [urlVideo, setVideo] = useState(selectedVideo.urlVideo);
     const [description, setDescription] = useState(selectedVideo.description);
-
-
-    // useEffect(() => {
-    //     ref.current?.showModal();
-    //     return () => ref.current?.close(); 
-    // }, []);
 
     useEffect(() => {
         if (openModal) {
@@ -36,8 +30,13 @@ function ModalEdit({ closeModal, updateVideo }) {
         }
     }, [openModal]);
 
-    // console.log(closeModal);
-    // console.log(selectedVideo);
+    const reset = () => {
+        setTitle('');
+        setCategory('');
+        setImage('');
+        setVideo('');
+        setDescription('');
+    }
 
 
     const handleSubmit = (e) => {
@@ -92,9 +91,10 @@ function ModalEdit({ closeModal, updateVideo }) {
                         width="100%"
                         handleChange={(e) => setDescription(e.target.value)}
                     />
-                    <button type="submit" className={styles.formButton}>
-                        Guardar
-                    </button>
+                    <div className={styles.formButtons}>
+                        <button type="submit" className={styles.formButton}>Guardar</button>
+                        <button type="reset" className={styles.formButtonReset} onClick={reset}>Limpiar</button>
+                    </div>
                 </form>
             </div>
         </dialog>

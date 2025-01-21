@@ -14,11 +14,6 @@ const GlobalContextProvider = ({ children }) => {
     const [modal, setModal] = useState(false);
     const [selectedVideo, setSelectedVideo] = useState(null); 
 
-    // const openModal = useCallback((video) => {
-    //     setSelectedVideo(video); 
-    //     setModal(true); 
-    // }, []);
-
     const openModal = (video) => {
         setSelectedVideo(video);
         setModal(true);
