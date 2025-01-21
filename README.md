@@ -16,25 +16,8 @@ Aluraflix es una aplicación web desarrollada con **React** como parte del chall
 - **Vite**: Herramienta de desarrollo rápida y ligera para aplicaciones web.
 - **React Router**: Navegación entre las diferentes páginas de la aplicación.
 - **CSS Modules**: Para estilos modulares y reutilizables.
-- **Fetch API / Axios**: Manejo de datos y comunicación con servicios externos.
-- **LocalStorage / Backend Mock**: Almacenamiento de datos (según sea necesario).
-
-## 📂 Estructura del proyecto
-
-```
-aluraflix/
-├── public/           # Archivos públicos
-├── src/              # Código fuente
-│   ├── components/   # Componentes reutilizables
-│   ├── pages/        # Páginas principales
-│   ├── assets/       # Recursos como imágenes o estilos globales
-│   ├── utils/        # Funciones auxiliares
-│   ├── App.jsx       # Punto de entrada de la aplicación
-│   └── index.jsx     # Renderizado principal
-├── .gitignore        # Archivos a ignorar por Git
-├── package.json      # Dependencias y scripts del proyecto
-└── README.md         # Documentación del proyecto
-```
+- **Fetch API**: Manejo de datos y comunicación con servicios externos.
+- **Backend Mock - Json-server**: Almacenamiento de datos (según sea necesario).
 
 ## 📚 Aprendizajes
 
