@@ -1,10 +1,10 @@
 
 import styles from './form.module.css'
-function FormGroupDescription({ title, placeholder, label }) {
+function FormGroupDescription({ title, placeholder, label, width, value, handleChange }) {
     return (
-        <div className={styles.formGroupDescription}>
+        <div className={styles.formGroupDescription} style={{ width }}>
             <label htmlFor={label}>{title}</label>
-            <textarea name={label} placeholder={placeholder}></textarea>
+            <textarea value={value} name={label} placeholder={placeholder} onChange={handleChange}></textarea>
         </div>
     )
 }

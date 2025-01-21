@@ -3,6 +3,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 150px 0px;
+    position: relative;
 }
 
 .title {
@@ -98,6 +99,47 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+.loading {
+    width: max-content;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--color-blue);
+    border: none;
+    outline: none;
+    color: #f3f3f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.error {
+    width: max-content;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--color-blue);
+    border: none;
+    outline: none;
+    color: #f3f3f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.success {
+    margin: 2rem auto;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--color-blue);
+    border: none;
+    outline: none;
+    color: #f3f3f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 
 @media screen and (width < 600px) {
     .form {

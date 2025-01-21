@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-.video video{
+.video iframe{
     width: 100%;
     object-fit: cover;
 }

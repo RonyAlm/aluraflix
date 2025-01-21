@@ -1,17 +1,13 @@
 import styles from './form.module.css'
-function FormGroupSelect({ title, label, placeholder, options }) {
+function FormGroupSelect({ title, label, placeholder, width, options, value, handleChange }) {
     return (
-        <div className={styles.formGroupSelect}>
+        <div className={styles.formGroupSelect}  style={{ width }}>
             <label htmlFor={label}>{title}</label>
-            <select name={label} className={styles.select}>
-                <option value="" disabled selected>{placeholder}</option>
-                {options && options.map((option) => 
-                       <option key={option.value} value={option.value}>{option.title}</option>)
+            <select name={label} className={styles.select} value={value} onChange={handleChange}>
+                <option defaultValue={""} disabled>{placeholder}</option>
+                {options && options.map((option) =>
+                    <option key={option.id} value={option.id}>{option.name}</option>)
                 }
-                {/* <option value="Frontend">Frontend</option>
-                <option value="Backend">Backend</option>
-                <option value="Database">Database</option>
-                <option value="DevOps">DevOps</option> */}
             </select>
         </div>
     )

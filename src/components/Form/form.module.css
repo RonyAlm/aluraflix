@@ -8,7 +8,7 @@
     margin-top: 2rem;
 }
 
-.formGroup, .formGroupFull {
+.formGroup, .formGroupDescription, .formGroupSelect {
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
 
 }
 
-.formGroupFull {
+.formGroupDescription {
     width: 92%;
 
     & textarea {
@@ -82,7 +82,7 @@
         flex-direction: column;
     }
 
-    .formGroup, .formGroupFull {
+    .formGroup, .formGroupDescription, .formGroupSelect {
         width: 100%;
     }
 }

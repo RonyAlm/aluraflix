@@ -7,17 +7,20 @@ import Footer from './components/Footer'
 
 import NewVideo from './pages/NewVideo'
 import HomePage from './pages/HomePage'
+import GlobalContextProvider from './context/GlobalContext'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/new" element={<NewVideo />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <GlobalContextProvider>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/new" element={<NewVideo />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </GlobalContextProvider>
   )
 }
 
